@@ -3,7 +3,7 @@ e o número de dias nos quais o valor foi superior à média"""
 
 import pandas as pd
 
-dados_1 = open('dados_1.json', 'r').read()  # Read data
+dados_1 = open('dados_1.json', 'r').read()
 
 df_dados_1 = pd.read_json(dados_1)
 df_dados_1_media_mes = df_dados_1.query('`valor` > 0').mean()
